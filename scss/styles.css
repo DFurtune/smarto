@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 102px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 9.37%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header img {
+    width: 69px;
+    height: 42px;
+    margin: auto 0;
+  }
+  header nav {
+    margin-left: 22.91%;
+  }
+  header nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  header nav ul li {
+    margin: auto 0;
+    margin-right: 9.43%;
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  header nav ul li :hover {
+    border-top: #333333 1px solid;
+    border-bottom: #333333 1px solid;
+  }
+  header nav ul li a {
+    color: #333333;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,45 @@
 @import "../components/_variables.scss";
+@import "../components/_fonts.scss";
 
 @media (min-width: 1024px) {
+  header {
+    height: 102px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 9.37%;
+    display: flex;
+    img {
+      width: 69px;
+      height: 42px;
+      margin: auto 0;
+    }
+    nav {
+      margin-left: 22.91%;
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        li {
+          margin: auto 0;
+          margin-right: 9.43%;
+          @include font-normal;
+          font-size: rem(12);
+          line-height: rem(12);
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+		  :hover{
+			border-top: #333333 1px solid;
+			border-bottom: #333333 1px solid;
+		}
+
+          a {
+            color: $Gray1;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
