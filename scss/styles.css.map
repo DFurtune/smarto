@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iCAAI;AACZ,OAAO,CAAC,iCAAI;AACZ,OAAO,CAAC,iCAAI;AACZ,OAAO,CAAC,mCAAI",
+    "mappings": "",
     "sources": [
-        "styles.scss"
+        "styles.scss",
+        "desktop/_desktop-styles.scss",
+        "components/_variables.scss"
     ],
     "names": [],
     "file": "styles.css"
