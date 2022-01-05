@@ -1,12 +1,12 @@
 @import "../components/_variables.scss";
 @import "../components/_fonts.scss";
+@import "../components/_slider.scss";
 
 @media (min-width: 1024px) {
   header {
     height: 102px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 9.37%;
     display: flex;
     img {
       width: 69px;
@@ -14,7 +14,7 @@
       margin: auto 0;
     }
     nav {
-      margin-left: 22.91%;
+      margin-left: 29.50%;
       ul {
         list-style: none;
         display: flex;
@@ -30,10 +30,9 @@
           letter-spacing: 0.2em;
           text-transform: uppercase;
 		  :hover{
-			border-top: #333333 1px solid;
-			border-bottom: #333333 1px solid;
+			border-top: $Gray1 1px solid;
+			border-bottom: $Gray1 1px solid;
 		}
-
           a {
             color: $Gray1;
             text-decoration: none;
