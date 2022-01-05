@@ -5,13 +5,162 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url("../../fonts/TTHoves-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+.container {
+  position: relative;
+}
+
+.slider {
+  width: 64.49%;
+  overflow: hidden;
+  float: right;
+  max-width: 770px;
+  max-height: 829px;
+}
+
+.slider-line {
+  width: 1540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.slider-line__item {
+  position: relative;
+}
+
+.slider-line__item img {
+  max-width: 100%;
+}
+
+.slider-line__item .watch-btn {
+  height: 71px;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-line__item .watch-btn span {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+  margin: auto auto auto 50px;
+}
+
+.slider-line__item .watch-btn span::after {
+  content: url(../../img/slider/ico-shape.svg);
+  margin: 0 50px 0 15px;
+}
+
+.arrows {
+  width: 53px;
+  height: 53px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  background: #f9f9f9;
+}
+
+.prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 23px;
+}
+
+.arrows-box {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrows-box hr {
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  margin: 0;
+}
+
+.title {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #333333;
+  margin: 0;
+  padding-top: 336px;
+}
+
+.title::first-line {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #bdbdbd;
+}
+
 @media (min-width: 1024px) {
   header {
     height: 102px;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 9.37%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,7 +171,7 @@
     margin: auto 0;
   }
   header nav {
-    margin-left: 22.91%;
+    margin-left: 29.50%;
   }
   header nav ul {
     list-style: none;
@@ -52,5 +201,11 @@
     color: #333333;
     text-decoration: none;
   }
+}
+
+body {
+  background: #ffffff;
+  max-width: 1440px;
+  padding: 0 9.37%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,88 @@
+@import "./fonts";
+@import "./variables";
+.container {
+  position: relative;
+}
+.slider {
+  width: 64.49%;
+  overflow: hidden;
+  float: right;
+  max-width: 770px;
+  max-height: 829px;
+}
+.slider-line {
+  width: 1540px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  &__item {
+	  position: relative;
+    img {
+      max-width: 100%;
+    }
+    .watch-btn {
+      height: 71px;
+      background-color: #fff;
+      border: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0;
+      cursor: pointer;
+      span {
+        @include font-normal;
+        font-size: rem(12);
+        line-height: rem(12);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $Gray1;
+        margin: auto auto auto 50px;
+      }
+      span::after {
+        content: url(../../img/slider/ico-shape.svg);
+        margin: 0 50px 0 15px;
+      }
+    }
+  }
+}
+.arrows {
+  width: 53px;
+  height: 53px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.arrows:hover {
+  background: #f9f9f9;
+}
+.prev {
+  transform: rotate(180deg);
+  margin-right: 23px;
+}
+.arrows-box {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  hr {
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    margin: 0;
+  }
+}
+
+.title {
+  @include font-bold;
+  font-size: rem(64);
+  line-height: rem(64);
+  color: $Gray1;
+  margin: 0;
+  padding-top: 336px;
+}
+.title::first-line {
+  @include font-300;
+  font-size: rem(64);
+  line-height: rem(64);
+  color: $Gray4;
+}

@@ -1,4 +1,5 @@
 $Gray1: #333333;
+$Gray4: #bdbdbd;
 
 $browser-context: 16;
 @function rem($pixels, $context: $browser-context) {
@@ -9,4 +10,14 @@ $browser-context: 16;
   font-family: "TT Hoves";
   font-style: normal;
   font-weight: normal;
+}
+@mixin font-bold {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin font-300 {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 300;
 }
